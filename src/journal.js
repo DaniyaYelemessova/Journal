@@ -23,6 +23,10 @@ Journal.prototype.numberOfVowels = function(){
  return vowelsCount;
 };
 
+Journal.prototype.getTeaser = function(){
+  return 0;
+};
+
 
 
 
