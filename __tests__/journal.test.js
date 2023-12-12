@@ -7,4 +7,9 @@ describe('Journal', () => {
   expect(entryName.title).toMatch("Daniya");
   expect(entryName.description).toMatch("studying");
  });
+
+ test('should return 0 for a string that is only spaces', () =>{
+  const newEntry = new Journal("   ", "  ");
+  expect(newEntry.numberOfWords()).toEqual(0);
+ });
 });
