@@ -4,13 +4,13 @@ export default function Journal(title,description){
 }
 
 Journal.prototype.numberOfWords = function(){
-//  if(this.description.trim().length === " "){
- return 0;
-}
-
+ if(this.description.trim().length === " "){
+  return 0;
+ }
+//  }
 //  const words = this.description.split(" ").filter(word => word !== "");
 //  return words.length;
-// };
+};
 
 // Journal.prototype.numberOfVowels = function(){
 //  const vowels = ["a", "e","i","o","u"];

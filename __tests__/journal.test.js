@@ -12,4 +12,9 @@ describe('Journal', () => {
   const newEntry = new Journal("   ", "  ");
   expect(newEntry.numberOfWords()).toEqual(0);
  });
+
+ test('should return the correct number of words for a string with words', () => {
+  const wordsEntry = new Journal(" ", "This is a test description");
+  expect(wordsEntry.numberOfWords()).toEqual(5);
+});
 });
