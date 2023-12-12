@@ -12,16 +12,15 @@ Journal.prototype.numberOfWords = function(){
 };
 
 Journal.prototype.numberOfVowels = function(){
-  return 0;
-//  const vowels = ["a", "e","i","o","u"];
-//  let vowelsCount = 0;
-//  const numberOfVowels = this.description.split("");
-//  numberOfVowels.forEach(function(letter){
-//   if(vowels.includes(letter)){
-//    vowelsCount +=1;
-//   }
-//  });
-//  return vowelsCount;
+ const vowels = ["a", "e","i","o","u"];
+ let vowelsCount = 0;
+ const numberOfVowels = this.description.split("");
+ numberOfVowels.forEach(function(letter){
+  if(vowels.includes(letter)){
+   vowelsCount +=1;
+  }
+ });
+ return vowelsCount;
 };
 
 
