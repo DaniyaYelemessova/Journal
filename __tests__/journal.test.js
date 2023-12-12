@@ -22,4 +22,9 @@ test('should not count numbers as words', () => {
   const wordsEntry = new Journal(" ", "This is a 75 test description");
   expect(wordsEntry.numberOfWords()).toEqual(5);
 });
+
+test('should return 0 for an empty string', () => {
+  const emptyEntry = new Journal("", "");
+  expect(emptyEntry.numberOfVowels()).toEqual(0);
+});
 });

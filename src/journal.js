@@ -11,7 +11,8 @@ Journal.prototype.numberOfWords = function(){
  return words.length;
 };
 
-// Journal.prototype.numberOfVowels = function(){
+Journal.prototype.numberOfVowels = function(){
+  return 0;
 //  const vowels = ["a", "e","i","o","u"];
 //  let vowelsCount = 0;
 //  const numberOfVowels = this.description.split("");
@@ -21,7 +22,7 @@ Journal.prototype.numberOfWords = function(){
 //   }
 //  });
 //  return vowelsCount;
-// };
+};
 
 
 
