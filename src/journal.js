@@ -24,7 +24,14 @@ Journal.prototype.numberOfVowels = function(){
 };
 
 Journal.prototype.getTeaser = function(){
+ const sentence = this.description.split(/[.!?]/);
+
+ if(sentence.length === 0){
   return 0;
+ }
+ const firstSentence = sentence[0].trim();
+ const words = firstSentence.split(/\s+/).slice(0,8);
+ return words.join(' ');
 };
 
 

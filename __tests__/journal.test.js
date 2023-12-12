@@ -40,6 +40,21 @@ test('should return the correct number of vowels for a string with vowels', () =
 
 test('should return 0 if there is no sentence ', () => {
   const sentence = new Journal("", "");
-  expect(sentence.getTeaser()).toEqual(0);
+  expect(sentence.getTeaser()).toEqual("");
+ });
+
+ test('should return sentence ', () => {
+  const sentence = new Journal("", "My name is Daniya");
+  expect(sentence.getTeaser()).toEqual("My name is Daniya");
+ });
+
+ test('should return the first sentence only', () => {
+  const sentence = new Journal("", "My name is Daniya and  I am from Kazakhstan");
+  expect(sentence.getTeaser()).toEqual("My name is Daniya and I am from");
+ });
+
+ test('should return the first sentence only', () => {
+  const sentence = new Journal("", "My name is Daniya. I am from Kazakhstan");
+  expect(sentence.getTeaser()).toEqual("My name is Daniya");
  });
 });
