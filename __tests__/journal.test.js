@@ -17,4 +17,9 @@ describe('Journal', () => {
   const wordsEntry = new Journal(" ", "This is a test description");
   expect(wordsEntry.numberOfWords()).toEqual(5);
 });
+
+test('should not count numbers as words', () => {
+  const wordsEntry = new Journal(" ", "This is a 75 test description");
+  expect(wordsEntry.numberOfWords()).toEqual(5);
+});
 });
